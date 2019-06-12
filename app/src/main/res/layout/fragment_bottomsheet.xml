@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical" android:gravity="center">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+
+                  android:orientation="vertical"
+                  android:clickable="true"
+                  android:focusable="true"
+                  android:background="@drawable/rw_rectangle"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:gravity="center"
+    >
+        <TextView
+                android:id="@+id/choice_group"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_marginBottom="5dp"
+                android:textSize="20sp"
+                android:textColor="#000000"
+        />
+
+        <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20sp"
+                android:textColor="#000000"
+        />
+
+        <TextView
+                android:id="@+id/balance"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#000000"
+        />
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+
+            android:id="@+id/navigation_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:menu="@menu/bottomappbar_menu">
+
+
+
+
+    </com.google.android.material.navigation.NavigationView>
+
+    <TextView
+            android:id="@+id/last_upd"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="end"
+            android:layout_marginBottom="10dp"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:layout_marginEnd="5dp"
+    />
+
+</LinearLayout>

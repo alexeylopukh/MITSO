@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LoginActivity"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:gravity="center"
+>
+    <LinearLayout android:layout_width="300dp"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:layout_marginTop="100dp"
+                  android:gravity="center"
+    >
+
+        <ProgressBar android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:id="@+id/auth_progress"
+                     android:visibility="invisible"
+        />
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Вход"
+                  android:textSize="25sp"
+                  android:gravity="center"
+                  android:fontFamily="sans-serif-black"
+                  android:textColor="@color/colorPrimary"
+        />
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Используйте свой лицевой счет для авторизации, чтобы контролировать свой баланс"
+                  android:textSize="18sp"
+                  android:gravity="center"
+                  android:layout_marginTop="30dp"
+                  android:layout_marginBottom="20dp"
+                  android:fontFamily="sans-serif-light"
+                  android:textColor="@color/colorPrimary"
+        />
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/login_layout"
+                android:hint="Логин"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:boxStrokeColor="@color/colorPrimary"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/login_input"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorText"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pass_layout"
+                android:hint="Пароль"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                app:boxStrokeColor="@color/colorPrimary"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/pass_input"
+                    android:inputType="numberPassword"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="100dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+    >
+
+        <Button android:id="@+id/skip_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Пропустить"
+                android:layout_marginEnd="90dp"
+                style="@style/AppTheme.Button.TextButton"
+        />
+
+        <Button android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Войти"
+                style="@style/AppTheme.Button.Light"
+        />
+    </LinearLayout>
+
+</LinearLayout>

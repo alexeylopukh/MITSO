@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "262510012632",
+    "firebase_url": "https://mitso-12d03.firebaseio.com",
+    "project_id": "mitso-12d03",
+    "storage_bucket": "mitso-12d03.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262510012632:android:9b6244602727efc2",
+        "android_client_info": {
+          "package_name": "com.schedule.mitso"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "262510012632-6ktkdbnb0pq3k02qff9pi5bm5mv1iaq6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.schedule.mitso",
+            "certificate_hash": "dab690ff7988cc1422c1f92e6d8f44a9daaf4355"
+          }
+        },
+        {
+          "client_id": "262510012632-ivvs20m8g109klcpb8mj1a5gh1arjvqm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmGKl5sOcI_lTwu5SMvDRoXoSWUYSOuRg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "262510012632-ivvs20m8g109klcpb8mj1a5gh1arjvqm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

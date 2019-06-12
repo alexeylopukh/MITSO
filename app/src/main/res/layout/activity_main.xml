@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/linerLayout"
+        android:background="@color/colorPrimary">
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:gravity="center"
+                  android:id="@+id/linerSpinner"
+                  android:layout_marginTop="50dp"
+    >
+
+        <ProgressBar android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:indeterminateTint="@color/white"
+                     android:id="@+id/progressLine"
+        />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Факультет:"
+                  style="@style/AppTheme.TextViewSpinnered"
+        />
+
+        <Spinner
+                android:id="@+id/spin_faculty"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                style="@style/AppTheme.Spinner"
+        />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  style="@style/AppTheme.TextViewSpinnered"
+                  android:text="Форма обучения:"
+        />
+
+        <Spinner
+                android:id="@+id/spin_form"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                style="@style/AppTheme.Spinner"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  style="@style/AppTheme.TextViewSpinnered"
+                  android:text="Курс:"
+        />
+
+        <Spinner
+                android:id="@+id/spin_cours"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                style="@style/AppTheme.Spinner"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  style="@style/AppTheme.TextViewSpinnered"
+                  android:text="Группа:"
+        />
+
+        <Spinner
+                android:id="@+id/spin_group"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                style="@style/AppTheme.Spinner"/>
+
+    </LinearLayout>
+
+    <Button
+            android:layout_marginBottom="100dp"
+            android:id="@+id/btn_go"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Найти"
+            style="@style/AppTheme.Button"
+    />
+
+</LinearLayout>

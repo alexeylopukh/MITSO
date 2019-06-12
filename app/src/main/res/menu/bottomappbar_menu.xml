@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="none">
+        <item
+                android:icon="@drawable/ic_time"
+                android:id="@+id/nav_change"
+                android:title="Сменить группу"/>
+        <item
+                android:icon="@drawable/ic_account"
+                android:id="@+id/nav_log_out"
+                android:title="Сменить аккаунт"/>
+        <item
+                android:icon="@drawable/ic_web"
+                android:id="@+id/nav_to_web"
+                android:title="Перейти на mitso.by"/>
+        <item
+                android:icon="@drawable/ic_report"
+                android:id="@+id/nav_bag_report"
+                android:title="Предложить улучшение/сообщить об ошибке" />
+    </group>
+</menu>
